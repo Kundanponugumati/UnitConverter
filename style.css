@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+/* Form Container Styling */
+input, select, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+
+input {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+select {
+    background-color: #0072ff;
+    color: #fff;
+}
+
+button {
+    background-color: #00c6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #0072ff;
+    transform: scale(1.05);
+}
+
+/* Converted Value Styling */
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: auto; /* Pushes the converted value to the bottom */
+    color: #ffffff;
+}
+
+span {
+    color: #00c6ff;
+    font-weight: bold;
+}
+
+/* Form Wrapper for Better Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    input, select, button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
